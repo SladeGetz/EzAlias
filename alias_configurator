@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+case "$1" in
+	0)
+		source ~/.zsh_alias
+		;;
+	1)
+		source ~/.zsh_alias
+		echo ALIASES_CONFIGURED
+		;;
+	2)
+		cat ~/.zsh_alias
+		;;
+	3)
+		vim ~/.zsh_alias
+		;;
+	4)
+		vim ~/ZshAlias/alias_configurator
+		;;
+	*)
+		echo "Usage: $0 {0: set | 1: configure | 2: list | 3: edit alias | 4: edit this }"
+		exit 1
+		;;
+esac
