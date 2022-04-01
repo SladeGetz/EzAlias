@@ -1,5 +1,3 @@
-#!/bin/zsh
-
 case "$1" in
 	0)
 		source ~/.zsh_alias

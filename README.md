@@ -11,15 +11,15 @@ touch .zsh_alias
 ```
 In order to run the script from your terminal type
 ```
-chmod +x <pathto>/ZshAlias/alias_configurator
+source <pathto>/ZshAlias/alias_configurator
 ```
 I highly suggest changing your `.zshrc` to run the script with argument 1, instead of `source ~/.zsh_alias`
 In your `.zshrc` file replace `source ~/.zsh_alias` with `source <pathto>/ZshAlias/alias_configurator 1`
 
-I also suggest adding `alias aliasing=<pathto>/ZshAlias/alias_configurator` in order to maximize workflow when quickly modifying aliases.
+I also suggest adding `alias aliasing='source <pathto>/ZshAlias/alias_configurator'` in order to maximize workflow when quickly modifying aliases.
 
 ## Usage
-Running `./alias_configurator` without any arguments will show the usage abilities of the script:
+Running `source ./alias_configurator` without any arguments will show the usage abilities of the script:
 `Usage: <pathto>/ZshAlias/alias_configurator {0: set | 1: configure | 2: list | 3: edit alias | 4: edit this }`
 
 Using the alias for the script (shown above), 
